@@ -1,0 +1,43 @@
+@import url(./fonts.css);
+
+:root {
+    --color-background: #ffffff;
+    --color-text: #212121;
+    --color-accent: #5284bd;
+    --color-link: #cd5f58;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-background: #212121;
+        --color-text: #ffffff;
+        --color-accent: #5284bd;
+        --color-link: #cd5f58;
+    }
+}
+
+body {
+    background: var(--color-background);
+    color: var(--color-text);
+    font-family: Work Sans, sans-serif;
+    margin: auto;
+    padding: 2rem;
+    max-width: 800px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--color-accent);
+    font-family: Merriweather, serif;
+    font-weight: bold;
+    font-size: 2.1em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-link);
+}
+
+a:hover {
+    text-decoration: underline;
+}
